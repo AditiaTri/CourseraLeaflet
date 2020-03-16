@@ -1,0 +1,14 @@
+# Title : R with Leaflet
+# Author: Aditia Trihadian
+
+Date: 16 March 2020
+
+Here's the location of the birthplace of R!
+```{r}
+library(leaflet)
+
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=174.768, lat=-36.852, popup="The Birthplace of R!")
+m  # Print the map
+```
